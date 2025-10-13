@@ -1,0 +1,235 @@
+html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+   /*this body is used throught the whole website , it controls the background live image of the website*/
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+            pointer-events: none;
+        }
+        
+    
+        /*this body is used throught the whole website , it controls the heading /title of each page */
+        .page-title {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            color: #056a0874;
+            font-size: 3em;
+            text-decoration: underline;
+            background: rgba(255,255,255,0.95);
+            display: inline-block;
+            padding: 0.2em 1em;
+            border-radius: 0.2em;
+        }
+       
+
+ /*this body is used to center the logo on the homepage*/
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; 
+        }
+        .logo img {
+            opacity: 0.8;
+        }
+
+
+ /*this body is for the navigation bar it also contains the slight animation of the navigation bar*/
+        nav {
+            margin-bottom: 2em;
+            background-color: rgba(5, 106, 8, 0.45); 
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);transform:translateY(-2px)
+        }
+
+     /*this body is for the footer of the website page*/
+   
+        footer {
+            background-color: rgba(5, 106, 8, 0.45);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            z-index: 1;
+            margin-top: 2em;
+        }
+
+ 
+        
+  /*this body is specifically for the about page*/
+  /*iyts function is to arange the layout of the images and the texts, that out of the first image 
+  will be reversed for the second image */
+
+       .about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em; 
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+}
+        .about-row.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        /*this body is also used in the products and about page*/
+        .text {
+            flex: 1 1 300px;
+            min-width: 250px;
+             color: white;
+              font-size: 1.3em;
+              font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .about-img {
+            flex: 0 0 300px;
+            min-width: 200px;
+            display: flex;
+            justify-content: center;
+        }
+     
+        header {
+            margin-top: 0.5em;
+            text-align: center;
+        }
+        main {
+            margin-top: 0;
+        }
+        @media (max-width: 800px) {
+            .about-row, .about-row.reverse {
+                flex-direction: column !important;
+                gap: 0.5em;
+            }
+            .about-img, .about-text {
+                min-width: 0;
+            }
+            .page-title {
+                font-size: 2em;
+                padding: 0.2em 0.5em;
+            }
+        }
+         
+        
+ /*this body is specifically for the gallery page, its job is to align the images in a grid formate
+ it also controls the layout of the products page */
+       .picture-layout {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+           gap: 1em;
+           padding: 1em;
+           justify-items: center;
+       }
+
+       .picture-layout img {
+           width: 100%;
+           height: 250px;
+           object-fit: cover;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+ /*this body of animation is specific to the products and gallery page*/
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.picture-layout img{
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
+    animation-name: slideInUp;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.2,.8,.2,1);
+}
+
+.picture-layout img:nth-child(1) 
+ { animation-delay: 0s; }
+.picture-layout img:nth-child(2) 
+ { animation-delay: 0.12s; }
+.picture-layout img:nth-child(3) 
+ { animation-delay: 0.24s; }
+.picture-layout img:nth-child(4) 
+ { animation-delay: 0.36s; }
+.picture-layout img:nth-child(5) 
+ { animation-delay: 0.48s; }
+.picture-layout img:nth-child(6) 
+ { animation-delay: 0.60s; }
+.picture-layout img:nth-child(7) 
+ { animation-delay: 0.72s; }
+.picture-layout img:nth-child(8) 
+ { animation-delay: 0.84s; }
+.picture-layout img:nth-child(9) 
+ { animation-delay: 0.96s; }
+.picture-layout img:nth-child(10) 
+{ animation-delay: 1.08s; }
+.picture-layout img:nth-child(11)
+ { animation-delay: 1.20s; }
+.picture-layout img:nth-child(12) 
+{ animation-delay: 1.32s; }
+.picture-layout img:nth-child(13)
+ { animation-delay: 1.44s; }
+.picture-layout img:nth-child(14) 
+{ animation-delay: 1.56s; }
+.picture-layout img:nth-child(15)
+ { animation-delay: 1.68s; }
+.picture-layout img:nth-child(16)
+ { animation-delay: 1.80s; }
+.picture-layout img:nth-child(17)
+ { animation-delay: 1.92s; }
+.picture-layout img:nth-child(18)
+ { animation-delay: 2.04s; }
+.picture-layout img:nth-child(19)
+ { animation-delay: 2.16s; }
+.picture-layout img:nth-child(20)
+ { animation-delay: 2.28s; }
+ .picture-layout img:nth-child(21)
+ { animation-delay: 2.40s; }
+ .picture-layout img:nth-child(22)
+{ animation-delay: 2.52s; }
+.picture-layout img:nth-child(23)
+{ animation-delay: 2.64s; }
+ .picture-layout img:nth-child(24)
+ { animation-delay: 2.76s; }
+    .picture-layout img:nth-child(25)
+    { animation-delay: 2.88s; }
+    .picture-layout img:nth-child(26)
+    { animation-delay: 3.00s; }
+    .picture-layout img:nth-child(27)
+    { animation-delay: 3.12s; }
+    .picture-layout img:nth-child(28)
+    { animation-delay: 3.24s; }
+
+
+
