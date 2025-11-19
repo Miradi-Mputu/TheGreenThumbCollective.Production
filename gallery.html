@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-        <link rel="stylesheet" href="style.css">
+    <title>Gallery | The Green Thumb Collective Portfolio</title>
+    <meta name="description" content="View The Green Thumb Collective's portfolio of sustainable gardening projects, vibrant flower beds, and lush green landscapes in Cape Town.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <video class="video-bg" src="IMAGES/GREEN THUMB COLLECTIVE BACKGROUND 3(PINK BLOOMING FLOWER).mp4" autoplay loop muted></video>
 
     <nav>
-        <a href="homepage.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="products.html">Products</a>
+    <a href="enquiry.html">Enquire</a>
+    <a href="contact.html">Contact</a>
+</nav>
     <div >
   <header style="text-align: center;">
             <h1 class="page-title">Gallery</h1>
@@ -25,7 +27,7 @@
           <div class="text">
      <p>
       Here the Green Thumb Collective proudly presents a curated gallery showcasing our finest gardening projects and plant collections.
-       Each image captures the essence of our commitment to sustainable gardening and the beauty of nature.
+       Each image captures the essence of our commitment to **sustainable gardening** and the beauty of nature.
         From vibrant flower beds to lush green landscapes, our gallery reflects the passion and expertise we bring to every project.
          Explore the diverse range of plants we nurture, the innovative designs we create, and the thriving gardens we cultivate for our clients. 
          This visual journey is a testament to our dedication to enhancing outdoor spaces while promoting eco-friendly practices. We invite you to immerse yourself in the world of 
@@ -34,28 +36,36 @@
       </div>
         </section>
         <div class="picture-layout">
-            <img src="IMAGES/gallery1.jpg" alt="">
-            <img src="IMAGES/GALLERY2.webp" alt="">
-            <img src="IMAGES/gallery3.jpg" alt="">
-            <img src="IMAGES/gallery4.webp" alt="">
-            <img src="IMAGES/gallery5.webp" alt="">
-            <img src="IMAGES/gallery6.webp" alt="">
-            <img src="IMAGES/gallery7.webp" alt="">
-            <img src="IMAGES/gallery10.jpg" alt="">
-            <img src="IMAGES/gallery9.jpg" alt="">
-            <img src="IMAGES/gallery11.jpg" alt="">
-             <img src="IMAGES/gallery12.webp" alt="">
-            <img src="IMAGES/gallery13.webp" alt="">
-            <img src="IMAGES/gallery14.webp" alt="">
-            <img src="IMAGES/gallery15.jpeg" alt="">
-            <img src="IMAGES/gallery16.webp" alt="">
-            <img src="IMAGES/gallery17.jpeg" alt="">
-            <img src="IMAGES/gallery18.jpeg" alt="">
-            <img src="IMAGES/gallery19.jpeg" alt="">
-            <img src="IMAGES/gallery20.jpeg" alt="">
-            <img src="IMAGES/gallery21.jpeg" alt="">
+            <img src="IMAGES/gallery1.jpg" alt="Beautifully maintained vibrant flower bed">
+            <img src="IMAGES/GALLERY2.png" alt="Modern succulent rock garden design">
+            <img src="IMAGES/gallery3.jpg" alt="Lush green backyard landscape with pathway">
+            <img src="IMAGES/GALLERY4.png" alt="Potted herbs on a windowsill in natural light">
+            <img src="IMAGES/gallery5.png" alt="Close-up of a blooming purple Hydrangea flower">
+            <img src="IMAGES/gallery6.png" alt="A collection of terracotta pots with small foliage plants">
+            <img src="IMAGES/gallery7.png" alt="Indigenous Fynbos garden landscape">
+            <img src="IMAGES/gallery10.jpg" alt="Water-wise garden with various drought-resistant plants">
+            <img src="IMAGES/gallery9.png" alt="Formal garden with symmetrical hedge design">
+            <img src="IMAGES/gallery11.png" alt="Vertical garden installation with mixed greenery">
+             <img src="IMAGES/gallery12.png" alt="A colorful array of Petunias in a hanging basket">
+            <img src="IMAGES/gallery13.png" alt="Outdoor seating area surrounded by potted plants">
+            <img src="IMAGES/gallery14.png" alt="Close-up of a rare orchid in full bloom">
+            <img src="IMAGES/gallery15.png" alt="A well-organized vegetable garden bed">
+            <img src="IMAGES/gallery16.png" alt="Backyard transformation with new lawn and flower borders">
+            <img src="IMAGES/gallery17.jpeg" alt="Small balcony garden with mixed indoor and outdoor plants">
+            <img src="IMAGES/gallery18.jpeg" alt="Flowering climbers covering a garden archway">
+            <img src="IMAGES/gallery19.jpeg" alt="A zen-inspired garden with pebbles and a single bonsai tree">
+            <img src="IMAGES/gallery20.png" alt="Rustic wooden planter box with mixed spring flowers">
+            <img src="IMAGES/gallery21.jpeg" alt="A view of a thriving urban farm plot">
         </div>
     </div>
+    
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+    
+    
     <footer>
           <p>&copy; 2025 The Green Thumb Collective. All Rights Reserved.</p>
         <p>Contact Us<br>
@@ -63,5 +73,6 @@
         Telephone:021 2344 2345
     </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
