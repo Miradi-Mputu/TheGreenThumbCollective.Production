@@ -10,6 +10,7 @@
 # A Gallaery page; this page will hold simple photos of the businesses products as well as ideas for the customer on how they can design the set up of thier plants.
 # A Product page; this page will have all the products as well as their details ,price,and how to look after the products or how to use the products.
 # A Contact page; this will be the last page of the website, it will have the business location and its contact details. as well has a message box where the user can send enquires to the business privatly.
+# as required in the assignment an enquiry page has been added, the user will be able to give detailed product relaied enquiries for quotations son services and products that our store provides.
 
 ## Installation
 # 1. Step one; Search the business on an search engine of your choice .
