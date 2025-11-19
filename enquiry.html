@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Enquiry | The Green Thumb Collective</title>
+    <meta name="description" content="Enquire about our gardening services, products, or volunteer opportunities at The Green Thumb Collective in Cape Town.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="video-bg" src="IMAGES/GREEN THUMB COLLECTIVE BACKGROUND 2(PINK FLOWERS).mp4" autoplay loop muted></video>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquire</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div>
+        <header style="text-align: center;">
+            <h1 class="page-title">SERVICE ENQUIRY</h1> 
+        </header>
+        <main>
+            <section class="contact-container">
+                <div class="text">
+                    <h2>Get a Quote</h2>
+                    <p>Interested in our gardening services, specific products, or want to join us as a volunteer? 
+                       Fill out this form and we'll provide you with detailed information about availability, pricing, 
+                       and requirements.<br><br>
+                       We offer competitive pricing and flexible options to suit your gardening needs and budget.</p>
+                    
+                    <h3>What We Offer</h3>
+                    <ul>
+                        <li>Garden Design & Landscaping</li>
+                        <li>Plant Maintenance Services</li>
+                        <li>Organic Pest Control</li>
+                        <li>Volunteer Opportunities</li>
+                        <li>Bulk Plant Purchases</li>
+                    </ul>
+                </div>
+                <div class="contact-form-container">
+                    <form id="enquiryForm" action="#" method="POST">
+                        <label for="enquiryType">Enquiry Type:</label>
+                        <select id="enquiryType" name="enquiryType" required aria-required="true">
+                            <option value="">Select an option</option>
+                            <option value="garden-design">Garden Design Service</option>
+                            <option value="maintenance">Garden Maintenance</option>
+                            <option value="product-quote">Product Quote</option>
+                            <option value="volunteer">Volunteer Opportunity</option>
+                            <option value="sponsorship">Sponsorship</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="budget">Estimated Budget (ZAR):</label>
+                        <input type="number" id="budget" name="budget" min="0" step="100" placeholder="e.g., 5000">
+
+                        <label for="preferredDate">Preferred Start Date:</label>
+                        <input type="date" id="preferredDate" name="preferredDate">
+
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        <div id="nameError" class="error-message">Name is required.</div>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        <div id="emailError" class="error-message">A valid email address is required.</div>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0211234567" required aria-required="true">
+                        <div id="phoneError" class="error-message">Valid 10-digit phone number required.</div>
+
+                        <label for="message">Specific Requirements:</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Please describe your garden size, specific plants of interest, or volunteer experience..."></textarea>
+                        <div id="messageError" class="error-message">Please provide details about your enquiry.</div>
+                        
+                        <button type="submit">Get Quote</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+       <p>&copy; 2025 The Green Thumb Collective. All Rights Reserved.</p>
+        <p>Contact Us<br>
+            Email: contact@greenthumb.com<br>
+            Telephone: 021 2344 2345
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
